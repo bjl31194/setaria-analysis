@@ -23,11 +23,11 @@ OUTDIR="/work/mplab/ben/output"
 
 #download genomes
 
-curl http://ftp.ensemblgenomes.org/pub/plants/release-52/fasta/zea_mays/dna/Zea_mays.Zm-B73-REFERENCE-NAM-5.0.dna.toplevel.fa.gz > ${SEQDIR}/Zm-B73-REFERENCE-NAM-5.0.fa.gz
+curl http://ftp.ensemblgenomes.org/pub/plants/release-52/fasta/zea_mays/dna/Zea_mays.Zm-B73-REFERENCE-NAM-5.0.dna.toplevel.fa.gz | gunzip -c > ${SEQDIR}/Zm-B73-REFERENCE-NAM-5.0.fa.gz
 
-curl http://ftp.ensemblgenomes.org/pub/plants/release-52/fasta/sorghum_bicolor/dna/Sorghum_bicolor.Sorghum_bicolor_NCBIv3.dna.toplevel.fa.gz > ${SEQDIR}/Sorghum_bicolor_NCBIv3.fa.gz
+curl http://ftp.ensemblgenomes.org/pub/plants/release-52/fasta/sorghum_bicolor/dna/Sorghum_bicolor.Sorghum_bicolor_NCBIv3.dna.toplevel.fa.gz | gunzip -c > ${SEQDIR}/Sorghum_bicolor_NCBIv3.fa.gz
 
-curl http://ftp.ensemblgenomes.org/pub/plants/release-52/fasta/setaria_italica/dna/Setaria_italica.Setaria_italica_v2.0.dna.toplevel.fa.gz > ${SEQDIR}/Setaria_italica_v2.0.fa.gz
+curl http://ftp.ensemblgenomes.org/pub/plants/release-52/fasta/setaria_italica/dna/Setaria_italica.Setaria_italica_v2.0.dna.toplevel.fa.gz | gunzip -c > ${SEQDIR}/Setaria_italica_v2.0.fa.gz
 
 #modules
 ml BLAST+/2.11.0-gompi-2019b
